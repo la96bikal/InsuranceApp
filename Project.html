@@ -5,36 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Main Page</title>
-<link href="singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/singlePageTemplate.css')}}" rel="stylesheet" type="text/css">
 
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<script>
-function func()
-    {
-        if (document.getElementById("f").checked)
-            {
-                var val=document.getElementById("f").value;
-                alert(val);
-            }
-        else if(document.getElementById("s").checked)
-            {
-                var val=document.getElementById("s").value;
-                alert(val);
-            }
-        else if(document.getElementById("t").checked)
-            {
-                var val=document.getElementById("t").value;
-                alert(val);
-            }
-        
-    }
-</script>
 
 </head>
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
   <!-- Navigation -->
   <header> <a href="" class="tagline"><font size="+3" face="Britannic"> Premium Insurance</font>        </a>
     <nav>
@@ -49,7 +28,7 @@ function func()
   <section class="hero" id="hero">
     <p class="tagline">Welcome to <font face="Britannic">premium insurance</font> </p>
     
-    <h2 class="hero_header">First Name <span class="light">Last Name</span></h2>
+    <h2 class="hero_header">{{i["FirstName"]}} <span class="light">{{i["LastName"]}}</span></h2>
     
   </section>
   <!-- About Section -->
@@ -67,15 +46,8 @@ function func()
     </div>
     <div class="thumbnail">
       <h1 class="stats">Discount Terms and Conditions</h1>
-        <form action="">
-        <input type="radio" name="option" id= "f" onclick="func()" value="For every two points earned from our point based system you will receive $5 discount every billing period."> Monthl Reward<br>
-        <input type="radio" name="option" id= "s" onclick="func()" value="For every fifteen points earned from our point based system you will receive $5 discount on every monthly payment for a year"> Yearly Reward<br>
-        <input type="radio" name="option" id="t" onclick="func()" value="For every fifteen points earned from our point based system you will receive $10 monthly discount every year for lifetime"> Lifetime Reward<br/>
-       
-        
-        
-        </form>
-      
+      <h4>TITLE</h4>
+      <p>One line description</p>
     </div>
     <div class="thumbnail">
       <h1 class="stats">Home Address</h1>
