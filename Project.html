@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Main Page</title>
+<link href="singlePageTemplate.css" rel="stylesheet" type="text/css">
+
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script>
+function func()
+    {
+        if (document.getElementById("f").checked)
+            {
+                var val=document.getElementById("f").value;
+                alert(val);
+            }
+        else if(document.getElementById("s").checked)
+            {
+                var val=document.getElementById("s").value;
+                alert(val);
+            }
+        else if(document.getElementById("t").checked)
+            {
+                var val=document.getElementById("t").value;
+                alert(val);
+            }
+        
+    }
+</script>
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="" class="tagline"><font size="+3" face="Britannic"> Premium Insurance</font>        </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <p class="tagline">Welcome to <font face="Britannic">premium insurance</font> </p>
+    
+    <h2 class="hero_header">First Name <span class="light">Last Name</span></h2>
+    
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    
+    
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">Navigate and Reward</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">Discount Terms and Conditions</h1>
+        <form action="">
+        <input type="radio" name="option" id= "f" onclick="func()" value="For every two points earned from our point based system you will receive $5 discount every billing period."> Monthl Reward<br>
+        <input type="radio" name="option" id= "s" onclick="func()" value="For every fifteen points earned from our point based system you will receive $5 discount on every monthly payment for a year"> Yearly Reward<br>
+        <input type="radio" name="option" id="t" onclick="func()" value="For every fifteen points earned from our point based system you will receive $10 monthly discount every year for lifetime"> Lifetime Reward<br/>
+       
+        
+        
+        </form>
+      
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">Home Address</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">Work Address</h1>
+      <h4>TITLE</h4>
+      <p></p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p></p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p></p>
+    </article>
+  </footer>
+  <!-- Footer Section -->
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2018 - <strong>Premium Insurance Inc.</strong><p><Font size=10 face="Times New Work">FSU Hacks</Font></p></div>
+</div>
+	
+<!-- Main Container Ends -->
+</body>
+</html>
